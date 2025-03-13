@@ -68,6 +68,9 @@ sequenceDiagram
 ![Bouton Ouvrir Calcul Echéancier](static/pos02.png)
 *Le bouton "Calcul CB X2 X3" ajouté par l'extension*
 
+![Champs Calcul Echéancier](static/pos03.png)
+*Le champs "Calcul CB X2 X3" ajouté par l'extension*
+
 ## 🔍 Débogage
 
 1. Ouvrez la console développeur (F12)
