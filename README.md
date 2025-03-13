@@ -14,7 +14,7 @@ Extension Chrome pour afficher un échéancier de paiement CB directement dans l
 
 1. Clonez ce dépôt :
 ```bash
-git clone https://github.com/ralphi2811/chrome_extension_odoo_pos_echeancier.git
+git clone https://github.com/wad974/chrome_extension_odoo_pos_echeancier.git
 ```
 
 2. Installez l'extension dans Chrome :
