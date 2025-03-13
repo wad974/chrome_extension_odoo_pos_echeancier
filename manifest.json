@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Odoo POS Calcul Échéancier CB x2 x3",
+  "version": "1.0",
+  "description": "Ajoute un bouton pour afficher un calcul échéancier CB",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/html/calculatrice.html"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["assets/js/index.js"]
+    }
+  ]
+}
+

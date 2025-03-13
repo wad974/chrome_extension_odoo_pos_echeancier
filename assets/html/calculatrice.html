@@ -1,0 +1,136 @@
+<!-- calculatrice.html -->
+
+<style>
+    .header-calculatrice{
+        background-color: #dddbe8;
+        min-height: 35px;
+        padding: 8px;
+    }
+    .header-calculatrice .title {
+        color: #212529;
+        padding: 5px 10px;
+        font-size: 1.15em;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+
+    .fermer {
+        position: absolute;
+        top: 8px;
+        right: 20px;
+        background: #71639E;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+    .wrapper main{
+        padding: 10px;
+    }
+
+    .formCb{
+        min-height: 35px;
+    }
+
+    .formCb .subtitle{
+        padding-top: 15px;
+    }
+
+    .textEcheance{
+        font-size: 1em;
+        font-weight: 800;
+        padding-top: 15px;
+    }
+
+    .buttonFormCalculatrice {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1em;
+        min-height: 35px;
+    }
+
+    .buttonFormCalculatrice .lesBoutons {
+        display: flex;
+    }
+
+    .lesBoutons button{
+        width: calc((100%/2) - 0.5em );
+        min-height: 35px;
+        margin: 0 0.5em;
+    }
+
+    .AfficheValeur {
+        margin-top: 1em;
+        display: none;
+    }
+
+    .AfficheValeur .product-price, .AfficheValeur .product-name{
+        margin-bottom: 0;
+    }
+
+    .nb3{display: none;}
+
+</style>
+
+<div class="wrapper">
+    <header class="header-calculatrice">
+        <h1 class="title">Calcul Échéancier CB ×2 ×3</h1>
+    </header>
+    <main>
+        <div class="formCb">
+            <h2 class="subtitle">
+                Montant total : <span class="montantTotal"></span>
+            </h2>
+        </div>
+        <div class="buttonFormCalculatrice">
+            <p class="textEcheance">
+                Le nombre d'échéance :
+            </p>
+            <div class="lesBoutons">
+                <button class="x2">x2</button>
+                <button class="x3">x3</button>
+            </div>
+        </div>
+        <div class="AfficheValeur">
+            <p class="textEcheance">
+                Le montant échéancier :
+            </p>
+            <div class="nb1 orderline p-2 lh-sm cursor-pointer">
+                <div class="d-flex justify-content-between">
+                    <h3 class="product-name d-inline-block flex-grow-1 fw-bolder pe-1 text-truncate">
+                        <span class="text-wrap">Montant N°1 </span>
+                    </h3>
+                    <p class="product-price d-inline-block text-end price fw-bolder"></p>
+                </div>
+                <ul class="info-list ms-2">
+                    <li class="price-per-unit">(dif 0)</li>
+                </ul>
+
+            </div>
+            <div class="nb2 orderline p-2 lh-sm cursor-pointer">
+                <div class="d-flex justify-content-between">
+                    <h3 class="product-name d-inline-block flex-grow-1 fw-bolder pe-1 text-truncate">
+                        <span class="text-wrap">Montant N°2 </span>
+                    </h3>
+                    <p class="product-price d-inline-block text-end price fw-bolder"></p>
+                </div>
+                <ul class="info-list ms-2">
+                    <li class="price-per-unit">(dif 30)</li>
+                </ul>
+            </div>
+            <div class="nb3 orderline p-2 lh-sm cursor-pointer">
+                <div class="d-flex justify-content-between">
+                    <h3 class="product-name d-inline-block flex-grow-1 fw-bolder pe-1 text-truncate">
+                        <span class="text-wrap">Montant N°3 </span>
+                    </h3>
+                    <p class="product-price d-inline-block text-end price fw-bolder"></p>
+                </div>
+                <ul class="info-list ms-2">
+                    <li class="price-per-unit">(dif 60)</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</div>
