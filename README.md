@@ -71,6 +71,12 @@ sequenceDiagram
 ![Champs Calcul Echéancier](static/pos03.png)
 *Le champs "Calcul CB X2 X3" ajouté par l'extension*
 
+![Champs aprés calcul Echéancier](static/pos04.png)
+*Le calcul échéancier "CB X2" éffectué aprés choix*
+
+![Champs aprés calcul Echéancier](static/pos05.png)
+*Le calcul échéancier "CB X3" éffectué aprés choix*
+
 ## 🔍 Débogage
 
 1. Ouvrez la console développeur (F12)
@@ -82,7 +88,7 @@ sequenceDiagram
 
 ## 📝 Changelog
 
-### Version 1.0.0 (18/02/2024)
+### Version 1.0.0 (13/03/2024)
 - ✨ Première version stable
 - 🎯 Injection automatique du bouton
 - 🔄 Détection des montants total
